@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function isInterger(number) {
+        if (number % 1 == 0 && number > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let num = parseFloat(prompt("Nhap vao mot so: "));
+    let result = isInterger(num);
+    if (result) {
+        alert("Day la so nguyen duong.");
+    } else {
+        alert("Day khong phai la so nguyen duong.");
+    }
+</script>
+
+</body>
+</html>

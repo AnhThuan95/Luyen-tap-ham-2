@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diameter and Area of Circle</title>
+</head>
+<body>
+
+<script>
+    function getDiameterAndAreaOfCircle(radius) {
+        let PI = 3.14;
+        let diameterCircle = 2 * PI * radius;
+        let areaCircle = PI * radius * radius;
+        alert("Chu vi hinh tron: " + diameterCircle);
+        alert("Dien tich hinh tron: " + areaCircle);
+    }
+
+    let rad = parseFloat(prompt("Ban muon tinh hinh tron ban kinh bao nhieu?"));
+    getDiameterAndAreaOfCircle(rad);
+</script>
+
+</body>
+</html>

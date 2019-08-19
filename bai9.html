@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function findCharacter(array, character) {
+        let index = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == character) {
+                index++;
+            }
+        }
+        if (index > 0) {
+            return index;
+        } else {
+            return -1;
+        }
+    }
+
+    let arr = ["h","e","l","l","o","m","y","n","a","m","e","i","s","t","h","u","a","n",];
+    let character1 = "b";
+    let result = findCharacter(arr, character1);
+    alert(result);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Is Number?</title>
+</head>
+<body>
+
+<script>
+    function isNumber(number) {
+        let arrayNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        for (let i = 0; i < arrayNum.length; i++) {
+            if (number == arrayNum[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    let num = parseInt(prompt("Nhap vao mot ki tu: "));
+    let result = isNumber(num);
+    if (result) {
+        alert("Ki tu nhap vao la mot so.");
+    } else {
+        alert("Ki tu nhap vao khong phai la mot so.");
+    }
+
+</script>
+
+</body>
+</html>

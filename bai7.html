@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function swapNumbers(array) {
+        let temp = array[0];
+        array[0] = array[1];
+        array[1] = temp;
+    }
+
+    let arr = [];
+    arr[0] = parseInt(prompt("Nhap a: "));
+    arr[1] = parseInt(prompt("Nhap b: "));
+    swapNumbers(arr);
+    alert("a = " + arr[0]);
+    alert("b = " + arr[1]);
+</script>
+
+</body>
+</html>
